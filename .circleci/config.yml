@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node
+      - image: circleci/node:latest@sha256:46650c4d004d3623846cc599ae7b3b344fe9d41a2a3d7ca89278130cdb0499e9
     steps:
       - checkout
       - run: sudo npm install -g semantic-release@12.0.0
